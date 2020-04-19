@@ -911,10 +911,11 @@
       <section data-markdown>
         # Understanding and designing efficient ML
       </section>
+      <!--02-1. Research-->
       <section data-markdown>
         # Research
       </section>      
-      <!--Representation Learning-->
+      <!--Representation Learning 01-->
       <section data-id="a6185cb32e1d0fd042150c408844504b">
           <div class="sl-block"
                data-block-id="0761a4cfc01e6d1575e5bd2850395cee"
@@ -984,9 +985,9 @@
                  data-placeholder-tag="p"
                  data-placeholder-text="Text"
                  style="z-index: 14; text-align: left;">
-              <p><span style="font-size:0.9em">However, such models utilize the data defined on a <strong>dense matrix form</strong>,<br>
-              which is <strong>not suitable</strong> for more <strong>general data structures</strong><br>
-              such as graphs or manifolds.<br>
+              <p><span style="font-size:0.9em">However, such models utilize the data defined on a <strong>large, dense matrix</strong>,<br>
+              which is <strong>not suitable</strong> for a <strong>sparse data</strong>
+              like a graph, or for a <strong>medium-sized feature matrix</strong> that are common in reinforcement learning.<br>
               In addition, their learned representations are often highly <strong>entangled</strong>,<br>
               which makes it difficult to semantically understand the representation space.</span></p>
               <p style="text-align:left">&nbsp;</p>
@@ -1026,137 +1027,147 @@
                  style=""></div>
           </div>
       </section>
-      <section data-id="47f04e2623f0305743e6bec5c17adf9e">
-<div class="sl-block"
-     data-block-id="5d3594a43278b26033f649ced205d94d"
-     data-block-type="text"
-     style="height: auto; width: 603px; left: 19px; top: 31px;">
-     <div class="sl-block-content"
-          data-placeholder-tag="p"
-          data-placeholder-text="Text"
-          style="z-index: 10;">
-     <p><span style="font-size:1.8em"><span style="color:#B22222"><strong>Representation Learning</strong></span></span></p>
-     <p>&nbsp;</p>
-     </div>
-</div>
-<div class="sl-block"
-     data-block-id="65f12e1db093e9785f483779e6ee67b5"
-     data-block-type="text"
-     style="height: auto; width: 248px; left: 750px; top: 25px;">
-     <div class="sl-block-content"
-          data-placeholder-tag="p"
-          data-placeholder-text="Text"
-          style="z-index: 11;">
-     <p><span style="font-size:0.5em"><span style="color:#B22222"><strong>KC Machine Learning Lab</strong></span></span></p>
-     <p>&nbsp;</p>
-     </div>
-</div>
-<div class="sl-block"
-     data-block-id="788869901324c430a8142a5a095945d1"
-     data-block-type="shape"
-     style="width: 321px; height: 12px; left: 640px; top: 64px;">
-     <div class="sl-block-content"
-          data-shape-fill-color="rgb(166, 28, 0)"
-          data-shape-stretch="true"
-          data-shape-type="rect"
-          style="z-index: 12;">
-     <svg height="100%"
-          preserveaspectratio="none"
-          version="1.1"
-          viewbox="0 0 321 12"
-          width="100%"
-          xmlns="http://www.w3.org/2000/svg">
-     <rect class="shape-element"
-          fill="rgb(166, 28, 0)"
-          height="12"
-          rx="0"
-          ry="0"
-          width="321"></rect></svg>
-     </div>
-</div>
-<div class="sl-block"
-     data-block-id="d746524494dec0b110e71495cf54f6f3"
-     data-block-type="text"
-     style="height: auto; width: 888px; left: 49px; top: 192px;">
-     <div class="sl-block-content"
-          data-placeholder-tag="p"
-          data-placeholder-text="Text"
-          style="z-index: 13; text-align: left; font-size: 110%;">
-     <p><span style="font-size:0.7em">We want to make progresses on solving such problems in representation learning by pursuing</span></p>
-     <p>&nbsp;</p>
-     <p>&nbsp;</p>
-     </div>
-</div>
-<div class="sl-block"
-     data-block-id="65dd96667c36729f678873fb5052656a"
-     data-block-type="text"
-     style="height: auto; width: 870px; left: 80px; top: 327px;">
-     <div class="sl-block-content"
-          data-placeholder-tag="p"
-          data-placeholder-text="Text"
-          style="z-index: 14; text-align: left;">
-     <p><span><span>the study of</span> <strong>geometric deep learning</strong><span>, which is an effort to<br>
-     generalize deep learning models to</span> <strong>non-Euclidean domains</strong><span>, and</span></span><br>
-     &nbsp;</p>
-     <p style="text-align:left"><span><span>the study of feature spaces of deep models including</span><br>
-     <strong>latent spaces of deep generative models.</strong></span></p>
-     </div>
-</div>
-<div class="sl-block"
-     data-block-id="9b049d1da1492f49ce10afc7686dfd2e"
-     data-block-type="shape"
-     style="width: 11px; height: 31px; left: 55px; top: 335px;">
-     <div class="sl-block-style"
-          style="z-index: 15; transform: rotate(180deg);">
-     <div class="sl-block-content"
-          data-shape-fill-color="rgb(170, 170, 170)"
-          data-shape-stretch="true"
-          data-shape-type="rect"
-          style="z-index: 15;">
-          <svg height="100%"
-               preserveaspectratio="none"
-               version="1.1"
-               viewbox="0 0 11 31"
-               width="100%"
-               xmlns="http://www.w3.org/2000/svg">
-          <rect class="shape-element"
-               fill="rgb(170, 170, 170)"
-               height="31"
-               rx="0"
-               ry="0"
-               width="11"></rect></svg>
-     </div>
-     </div>
-</div>
-<div class="sl-block"
-     data-block-id="a7226f0670f811bcc86c5d28bb146a38"
-     data-block-type="shape"
-     style="width: 11px; height: 31px; left: 55px; top: 447px;">
-     <div class="sl-block-style"
-          style="z-index: 16; transform: rotate(180deg);">
-     <div class="sl-block-content"
-          data-shape-fill-color="rgb(170, 170, 170)"
-          data-shape-stretch="true"
-          data-shape-type="rect"
-          style="z-index: 16;">
-          <svg height="100%"
-               preserveaspectratio="none"
-               version="1.1"
-               viewbox="0 0 11 31"
-               width="100%"
-               xmlns="http://www.w3.org/2000/svg">
-          <rect class="shape-element"
-               fill="rgb(170, 170, 170)"
-               height="31"
-               rx="0"
-               ry="0"
-               width="11"></rect></svg>
-     </div>
-     </div>
-</div>
+      
+      <!--<section data-id="47f04e2623f0305743e6bec5c17adf9e">
+        <div class="sl-block"
+            data-block-id="5d3594a43278b26033f649ced205d94d"
+            data-block-type="text"
+            style="height: auto; width: 603px; left: 19px; top: 31px;">
+            <div class="sl-block-content"
+                  data-placeholder-tag="p"
+                  data-placeholder-text="Text"
+                  style="z-index: 10;">
+            <p><span style="font-size:1.8em"><span style="color:#B22222"><strong>Representation Learning</strong></span></span></p>
+            <p>&nbsp;</p>
+            </div>
+        </div>
+        <div class="sl-block"
+            data-block-id="65f12e1db093e9785f483779e6ee67b5"
+            data-block-type="text"
+            style="height: auto; width: 248px; left: 750px; top: 25px;">
+            <div class="sl-block-content"
+                  data-placeholder-tag="p"
+                  data-placeholder-text="Text"
+                  style="z-index: 11;">
+            <p><span style="font-size:0.5em"><span style="color:#B22222"><strong>KC Machine Learning Lab</strong></span></span></p>
+            <p>&nbsp;</p>
+            </div>
+        </div>
+        <div class="sl-block"
+            data-block-id="788869901324c430a8142a5a095945d1"
+            data-block-type="shape"
+            style="width: 321px; height: 12px; left: 640px; top: 64px;">
+            <div class="sl-block-content"
+                  data-shape-fill-color="rgb(166, 28, 0)"
+                  data-shape-stretch="true"
+                  data-shape-type="rect"
+                  style="z-index: 12;">
+            <svg height="100%"
+                  preserveaspectratio="none"
+                  version="1.1"
+                  viewbox="0 0 321 12"
+                  width="100%"
+                  xmlns="http://www.w3.org/2000/svg">
+            <rect class="shape-element"
+                  fill="rgb(166, 28, 0)"
+                  height="12"
+                  rx="0"
+                  ry="0"
+                  width="321"></rect></svg>
+            </div>
+        </div>
+        <div class="sl-block"
+            data-block-id="d746524494dec0b110e71495cf54f6f3"
+            data-block-type="text"
+            style="height: auto; width: 888px; left: 49px; top: 192px;">
+            <div class="sl-block-content"
+                  data-placeholder-tag="p"
+                  data-placeholder-text="Text"
+                  style="z-index: 13; text-align: left; font-size: 110%;">
+            <p><span style="font-size:0.7em">We want to make progresses on solving such problems in representation learning by pursuing</span></p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            </div>
+        </div>
+        <div class="sl-block"
+            data-block-id="65dd96667c36729f678873fb5052656a"
+            data-block-type="text"
+            style="height: auto; width: 870px; left: 80px; top: 327px;">
+            <div class="sl-block-content"
+                  data-placeholder-tag="p"
+                  data-placeholder-text="Text"
+                  style="z-index: 14; text-align: left;">
+            <p><span><span>the study of</span> <strong>geometric deep learning</strong><span>, which is an effort to<br>
+            generalize deep learning models to</span> <strong>non-Euclidean domains</strong><span>, and</span></span><br>
+            &nbsp;</p>
+            <p style="text-align:left"><span><span>the study of feature spaces of deep models including</span><br>
+            <strong>latent spaces of deep generative models.</strong></span></p>
+            </div>
+        </div>
+        <div class="sl-block"
+            data-block-id="9b049d1da1492f49ce10afc7686dfd2e"
+            data-block-type="shape"
+            style="width: 11px; height: 31px; left: 55px; top: 335px;">
+            <div class="sl-block-style"
+                  style="z-index: 15; transform: rotate(180deg);">
+            <div class="sl-block-content"
+                  data-shape-fill-color="rgb(170, 170, 170)"
+                  data-shape-stretch="true"
+                  data-shape-type="rect"
+                  style="z-index: 15;">
+                  <svg height="100%"
+                      preserveaspectratio="none"
+                      version="1.1"
+                      viewbox="0 0 11 31"
+                      width="100%"
+                      xmlns="http://www.w3.org/2000/svg">
+                  <rect class="shape-element"
+                      fill="rgb(170, 170, 170)"
+                      height="31"
+                      rx="0"
+                      ry="0"
+                      width="11"></rect></svg>
+            </div>
+            </div>
+        </div>
+        <div class="sl-block"
+            data-block-id="a7226f0670f811bcc86c5d28bb146a38"
+            data-block-type="shape"
+            style="width: 11px; height: 31px; left: 55px; top: 447px;">
+            <div class="sl-block-style"
+                  style="z-index: 16; transform: rotate(180deg);">
+            <div class="sl-block-content"
+                  data-shape-fill-color="rgb(170, 170, 170)"
+                  data-shape-stretch="true"
+                  data-shape-type="rect"
+                  style="z-index: 16;">
+                  <svg height="100%"
+                      preserveaspectratio="none"
+                      version="1.1"
+                      viewbox="0 0 11 31"
+                      width="100%"
+                      xmlns="http://www.w3.org/2000/svg">
+                  <rect class="shape-element"
+                      fill="rgb(170, 170, 170)"
+                      height="31"
+                      rx="0"
+                      ry="0"
+                      width="11"></rect></svg>
+            </div>
+            </div>
+        </div>
+      </section>-->
+      
+      <section data-markdown>
+        # Representation Learning 02
+        * For both efficiency and transferability, it is crucial to better understand the representations that deep models learn via current optimizations for network models and then to develop compact, semantic representations of features.
+        * Better representation of states and policies in RL.
+        * Representations of graph-learning models
+        * Representations of computer systems using graphs.
+        * Representations in a non-Euclidean space and its optimization.
       </section>
 
-      <!--02-1. Reinforcement Learning-->
+      <!--02-1-1. Reinforcement Learning-->
       <section class="stack"
                data-id="8c75e63095a64c7eba8fc39a5b9c8968">
         <section data-id="5422bdc6e70ba807e7a2a1425d3382b7">
@@ -1678,514 +1689,12 @@
           </div>
         </section>
       </section>
-
-      <section data-markdown>
-        # Graph
-      </section>      
-
-      
-      <!--Hyperbolic geometry and ML-->
-      <section class="stack"
-               data-id="9b5cf61735cc80f1a51df48926053813">
-
+      <!--02-1-2. Graph -->
+      <section class="stack">
         <section data-markdown>
-          # Geometry
+          # Graph
         </section>
-
-        <section data-id="95b0c2cb0fc803d32aa2a1c2b840cdf2">
-          <div class="sl-block"
-               data-block-id="10e8346a7420a43ed807db5f0d648c9f"
-               data-block-type="text"
-               style="height: auto; width: 603px; left: 30px; top: 47px;">
-            <div class="sl-block-content"
-                 data-placeholder-tag="p"
-                 data-placeholder-text="Text"
-                 style="z-index: 10;">
-              <p><span style="color:#B22222"><span style="font-size:1.4em"><strong>Hyperbolic geometry and ML</strong></span></span></p>
-              <p>&nbsp;</p>
-            </div>
-          </div>
-          <div class="sl-block"
-               data-block-id="c7e84c002291a2ec2bb24b16381895f4"
-               data-block-type="text"
-               style="height: auto; width: 248px; left: 750px; top: 25px;">
-            <div class="sl-block-content"
-                 data-placeholder-tag="p"
-                 data-placeholder-text="Text"
-                 style="z-index: 11;">
-              <p><span style="font-size:0.5em"><span style="color:#B22222"><strong>KC Machine Learning Lab</strong></span></span></p>
-              <p>&nbsp;</p>
-            </div>
-          </div>
-          <div class="sl-block"
-               data-block-id="f0b617e6446407524bd302bad6a8f735"
-               data-block-type="shape"
-               style="width: 321px; height: 12px; left: 640px; top: 64px;">
-            <div class="sl-block-content"
-                 data-shape-fill-color="rgb(166, 28, 0)"
-                 data-shape-stretch="true"
-                 data-shape-type="rect"
-                 style="z-index: 12;">
-              <svg height="100%"
-                   preserveaspectratio="none"
-                   version="1.1"
-                   viewbox="0 0 321 12"
-                   width="100%"
-                   xmlns="http://www.w3.org/2000/svg">
-              <rect class="shape-element"
-                    fill="rgb(166, 28, 0)"
-                    height="12"
-                    rx="0"
-                    ry="0"
-                    width="321"></rect></svg>
-            </div>
-          </div>
-          <div class="sl-block"
-               data-block-id="a17b2ea21a3a96d2894da2b31ded14bb"
-               data-block-type="shape"
-               style="width: 68px; height: 12px; left: 0px; top: 20px;">
-            <div class="sl-block-content"
-                 data-shape-fill-color="rgb(166, 28, 0)"
-                 data-shape-stretch="true"
-                 data-shape-type="rect"
-                 style="z-index: 13;">
-              <svg height="100%"
-                   preserveaspectratio="none"
-                   version="1.1"
-                   viewbox="0 0 68 12"
-                   width="100%"
-                   xmlns="http://www.w3.org/2000/svg">
-              <rect class="shape-element"
-                    fill="rgb(166, 28, 0)"
-                    height="12"
-                    rx="0"
-                    ry="0"
-                    width="68"></rect></svg>
-            </div>
-          </div>
-          <div class="sl-block"
-               data-block-id="4f2c149ec1c8f422ddadc885d87f06f4"
-               data-block-type="text"
-               style="height: auto; width: 330px; left: 56px; top: 8px;">
-            <div class="sl-block-content"
-                 data-placeholder-tag="p"
-                 data-placeholder-text="Text"
-                 dir="ui"
-                 style="z-index: 14;">
-              <p><span style="font-size:0.9em;"><span style="color:#B22222"><strong>Representative Learning</strong></span></span></p>
-              <p><br></p>
-            </div>
-          </div>
-          <div class="sl-block"
-               data-block-id="485e066dba695de8fc482072705b050d"
-               data-block-type="image"
-               style="width: 269px; height: 257px; left: 56px; top: 140px; min-width: 4px; min-height: 4px;">
-            <div class="sl-block-content"
-                 style="z-index: 15;"><img data-lazy-loaded=""
-                 data-natural-height="490"
-                 data-natural-width="512"
-                 data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/1121758/images/6504339/pasted-from-clipboard.png"
-                 style=""></div>
-          </div>
-          <div class="sl-block"
-               data-block-id="b0c1a4f636b35a9b92a2591379c7f428"
-               data-block-type="image"
-               style="width: 256px; height: 255px; left: 684px; top: 410px; min-width: 4px; min-height: 4px;">
-            <div class="sl-block-content"
-                 style="z-index: 16;"><img data-lazy-loaded=""
-                 data-natural-height="403"
-                 data-natural-width="404"
-                 data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/1121758/images/6504340/pasted-from-clipboard.png"
-                 style=""></div>
-          </div>
-          <div class="sl-block"
-               data-block-id="dca4e92903380b80dd55d48606ded951"
-               data-block-type="text"
-               style="height: auto; width: 600px; left: 340px; top: 193px;">
-            <div class="sl-block-content"
-                 data-placeholder-tag="p"
-                 data-placeholder-text="Text"
-                 style="z-index: 17; text-align: left;">
-              <p><span><strong>Embedding hierarchical data</strong> <span>such as</span><br>
-              <span>computer networks can be done more efficiently</span><br>
-              <span>in an ambient space of</span> <strong>negative curvature</strong><span>.</span></span></p>
-              <p>&nbsp;</p>
-            </div>
-          </div>
-          <div class="sl-block"
-               data-block-id="d64c9aebbd03613bb9f2aebfccf34951"
-               data-block-type="text"
-               style="height: auto; width: 637px; left: 68px; top: 443px;">
-            <div class="sl-block-content"
-                 data-placeholder-tag="p"
-                 data-placeholder-text="Text"
-                 style="z-index: 18; text-align: left;">
-              <p><span><span>A</span> <strong>hyperbolic geometry</strong> <span>also occurs naturally when</span><br>
-              <span>considering</span> <strong>hierarchical clustering of data</strong><span>,<br>
-              which is</span> <span>one of the popular unsupervised<br>
-              learning algorithms.</span></span></p>
-              <p>&nbsp;</p>
-            </div>
-          </div>
-        </section>
-        <section data-id="9d39e4d322a358d2d19744fe6c428865">
-          <div class="sl-block"
-               data-block-id="80ed557af258f643371c199dc8037940"
-               data-block-type="text"
-               style="height: auto; width: 603px; left: 30px; top: 47px;">
-            <div class="sl-block-content"
-                 data-placeholder-tag="p"
-                 data-placeholder-text="Text"
-                 style="z-index: 10;">
-              <p><span style="color:#B22222"><span style="font-size:1.4em"><strong>Hyperbolic geometry and ML</strong></span></span></p>
-              <p>&nbsp;</p>
-            </div>
-          </div>
-          <div class="sl-block"
-               data-block-id="7ea1b087d333443eb7ba999df28ba6cc"
-               data-block-type="text"
-               style="height: auto; width: 248px; left: 750px; top: 25px;">
-            <div class="sl-block-content"
-                 data-placeholder-tag="p"
-                 data-placeholder-text="Text"
-                 style="z-index: 11;">
-              <p><span style="font-size:0.5em"><span style="color:#B22222"><strong>KC Machine Learning Lab</strong></span></span></p>
-              <p>&nbsp;</p>
-            </div>
-          </div>
-          <div class="sl-block"
-               data-block-id="462dea536887a089475e20e11a5c7cc9"
-               data-block-type="shape"
-               style="width: 321px; height: 12px; left: 640px; top: 64px;">
-            <div class="sl-block-content"
-                 data-shape-fill-color="rgb(166, 28, 0)"
-                 data-shape-stretch="true"
-                 data-shape-type="rect"
-                 style="z-index: 12;">
-              <svg height="100%"
-                   preserveaspectratio="none"
-                   version="1.1"
-                   viewbox="0 0 321 12"
-                   width="100%"
-                   xmlns="http://www.w3.org/2000/svg">
-              <rect class="shape-element"
-                    fill="rgb(166, 28, 0)"
-                    height="12"
-                    rx="0"
-                    ry="0"
-                    width="321"></rect></svg>
-            </div>
-          </div>
-          <div class="sl-block"
-               data-block-id="6cbe09e3244130732c7763387b75b75c"
-               data-block-type="shape"
-               style="width: 68px; height: 12px; left: 0px; top: 20px;">
-            <div class="sl-block-content"
-                 data-shape-fill-color="rgb(166, 28, 0)"
-                 data-shape-stretch="true"
-                 data-shape-type="rect"
-                 style="z-index: 13;">
-              <svg height="100%"
-                   preserveaspectratio="none"
-                   version="1.1"
-                   viewbox="0 0 68 12"
-                   width="100%"
-                   xmlns="http://www.w3.org/2000/svg">
-              <rect class="shape-element"
-                    fill="rgb(166, 28, 0)"
-                    height="12"
-                    rx="0"
-                    ry="0"
-                    width="68"></rect></svg>
-            </div>
-          </div>
-          <div class="sl-block"
-               data-block-id="b79a6433aa66979bbb6a5644284bae23"
-               data-block-type="text"
-               style="height: auto; width: 330px; left: 56px; top: 8px;">
-            <div class="sl-block-content"
-                 data-placeholder-tag="p"
-                 data-placeholder-text="Text"
-                 dir="ui"
-                 style="z-index: 14;">
-              <p><span style="font-size:0.9em;"><span style="color:#B22222"><strong>Representative Learning</strong></span></span></p>
-              <p><br></p>
-            </div>
-          </div>
-          <div class="sl-block"
-               data-block-id="e2cc34ee330c637b4e09c96a8cd5af52"
-               data-block-type="text"
-               style="height: auto; width: 872px; left: 80px; top: 490px;">
-            <div class="sl-block-content"
-                 data-placeholder-tag="p"
-                 data-placeholder-text="Text"
-                 style="z-index: 15; text-align: left;">
-              <p><span style="font-size:0.9em">Utilizing the efficiency of such a <strong>Riemannian geometry</strong> and developing suitable, intrinsic <strong>optimization techniques</strong> for machine learning and<br>
-              deep learning is both a theoretically interesting challenge and a practically applicable method to a wide variety of problems.</span></p>
-            </div>
-          </div>
-          <div class="sl-block"
-               data-block-id="07e3f54f14e333604ee03074062bf06a"
-               data-block-type="image"
-               style="width: 277px; height: 302px; left: 160px; top: 140px; min-width: 4px; min-height: 4px;">
-            <div class="sl-block-content"
-                 style="z-index: 16;"><img data-lazy-loaded=""
-                 data-natural-height="522"
-                 data-natural-width="479"
-                 data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/1121758/images/6504344/pasted-from-clipboard.png"
-                 style=""></div>
-          </div>
-          <div class="sl-block"
-               data-block-id="d5e02c9bd0d19dc4b6e27aa30a2653ec"
-               data-block-type="image"
-               style="width: 301px; height: 302px; left: 499px; top: 140px; min-width: 4px; min-height: 4px;">
-            <div class="sl-block-content"
-                 style="z-index: 17;"><img data-lazy-loaded=""
-                 data-natural-height="540"
-                 data-natural-width="538"
-                 data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/1121758/images/6504346/pasted-from-clipboard.png"
-                 style=""></div>
-          </div>
-        </section>
-      </section>
-
-
-      <section class="stack"
-               data-id="99b268b529371bfdba826f7e7a5b25db">
-        <section data-id="16a21c648ddd953848bd4b125f7559af">
-          <div class="sl-block"
-               data-block-id="e37e80dca00d9c3c5742069756e123a7"
-               data-block-type="text"
-               style="height: auto; width: 838px; left: -38px; top: 40px;">
-            <div class="sl-block-content"
-                 data-placeholder-tag="p"
-                 data-placeholder-text="Text"
-                 style="z-index: 10;">
-              <p><span style="color:#B22222"><span style="font-size:1.4em"><strong>Machine Intelligence in System Design</strong></span></span></p>
-            </div>
-          </div>
-          <div class="sl-block"
-               data-block-id="ec28d19cda777f36b4d89cb765940983"
-               data-block-type="text"
-               style="height: auto; width: 248px; left: 750px; top: 25px;">
-            <div class="sl-block-content"
-                 data-placeholder-tag="p"
-                 data-placeholder-text="Text"
-                 style="z-index: 11;">
-              <p><span style="font-size:0.5em"><span style="color:#B22222"><strong>KC Machine Learning Lab</strong></span></span></p>
-              <p>&nbsp;</p>
-            </div>
-          </div>
-          <div class="sl-block"
-               data-block-id="a274f45f36f6d5c212c6ad38497a05f7"
-               data-block-type="shape"
-               style="width: 201px; height: 12px; left: 760px; top: 64px;">
-            <div class="sl-block-content"
-                 data-shape-fill-color="rgb(166, 28, 0)"
-                 data-shape-stretch="true"
-                 data-shape-type="rect"
-                 style="z-index: 12;">
-              <svg height="100%"
-                   preserveaspectratio="none"
-                   version="1.1"
-                   viewbox="0 0 201 12"
-                   width="100%"
-                   xmlns="http://www.w3.org/2000/svg">
-              <rect class="shape-element"
-                    fill="rgb(166, 28, 0)"
-                    height="12"
-                    rx="0"
-                    ry="0"
-                    width="201"></rect></svg>
-            </div>
-          </div>
-          <div class="sl-block"
-               data-block-id="93171f93196d213dd9e3f8d90652067a"
-               data-block-type="text"
-               style="height: auto; width: 846px; left: 57px; top: 140px;">
-            <div class="sl-block-content"
-                 data-has-line-height=""
-                 data-placeholder-tag="p"
-                 data-placeholder-text="Text"
-                 style="z-index: 13; text-align: left; line-height: 1.378;">
-              <p><span style="font-size:0.9em">When designing a system, it often contains <strong>heuristics</strong> that are the result of trials and errors by many experts, whose time and effort can be better spent upon researching more
-              challenging parts of the system.</span></p>
-              <p>&nbsp;</p>
-              <p><span style="font-size:0.9em">&nbsp; &nbsp; &nbsp; Modern <strong>computer systems</strong> contain various heuristics in both hardware&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; and software in order to increase their computational
-              performance.</span><br>
-              &nbsp;</p>
-              <p><span style="font-size:0.9em"><strong>&nbsp; &nbsp; &nbsp; Electronic circuit design</strong> also involves various decision makings based&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; upon heuristics of engineers.</span><br>
-              &nbsp;</p>
-              <p><span style="font-size:0.9em"><strong>&nbsp; &nbsp; &nbsp;Controller systems</strong> in various manufacturing environments are tuned by&nbsp; &nbsp; &nbsp; &nbsp;experts' heuristics.</span></p>
-              <p>&nbsp;</p>
-              <p>&nbsp;</p>
-            </div>
-          </div>
-          <div class="sl-block"
-               data-block-id="95ff6dd5b42c9aab485cb6114f1d1000"
-               data-block-type="shape"
-               style="width: 14px; height: 30px; left: 57px; top: 314px;">
-            <div class="sl-block-content"
-                 data-shape-fill-color="rgb(170, 170, 170)"
-                 data-shape-stretch="true"
-                 data-shape-type="rect"
-                 style="z-index: 14;">
-              <svg height="100%"
-                   preserveaspectratio="none"
-                   version="1.1"
-                   viewbox="0 0 14 30"
-                   width="100%"
-                   xmlns="http://www.w3.org/2000/svg">
-              <rect class="shape-element"
-                    fill="rgb(170, 170, 170)"
-                    height="30"
-                    rx="0"
-                    ry="0"
-                    width="14"></rect></svg>
-            </div>
-          </div>
-          <div class="sl-block"
-               data-block-id="219196bf7c1a216b9f8c34096ef8a05f"
-               data-block-type="shape"
-               style="width: 14px; height: 30px; left: 57px; top: 433px;">
-            <div class="sl-block-content"
-                 data-shape-fill-color="rgb(170, 170, 170)"
-                 data-shape-stretch="true"
-                 data-shape-type="rect"
-                 style="z-index: 15;">
-              <svg height="100%"
-                   preserveaspectratio="none"
-                   version="1.1"
-                   viewbox="0 0 14 30"
-                   width="100%"
-                   xmlns="http://www.w3.org/2000/svg">
-              <rect class="shape-element"
-                    fill="rgb(170, 170, 170)"
-                    height="30"
-                    rx="0"
-                    ry="0"
-                    width="14"></rect></svg>
-            </div>
-          </div>
-          <div class="sl-block"
-               data-block-id="da8b7818c86853843dce4856b7a91d26"
-               data-block-type="shape"
-               style="width: 14px; height: 30px; left: 57px; top: 556px;">
-            <div class="sl-block-content"
-                 data-shape-fill-color="rgb(170, 170, 170)"
-                 data-shape-stretch="true"
-                 data-shape-type="rect"
-                 style="z-index: 16;">
-              <svg height="100%"
-                   preserveaspectratio="none"
-                   version="1.1"
-                   viewbox="0 0 14 30"
-                   width="100%"
-                   xmlns="http://www.w3.org/2000/svg">
-              <rect class="shape-element"
-                    fill="rgb(170, 170, 170)"
-                    height="30"
-                    rx="0"
-                    ry="0"
-                    width="14"></rect></svg>
-            </div>
-          </div>
-        </section>
-        <section data-id="035002a421c8c4e5c8e62e8298e224cf">
-          <div class="sl-block"
-               data-block-id="90d14dc3d6024b1ce85540f200439293"
-               data-block-type="text"
-               style="height: auto; width: 838px; left: -38px; top: 40px;">
-            <div class="sl-block-content"
-                 data-placeholder-tag="p"
-                 data-placeholder-text="Text"
-                 style="z-index: 10;">
-              <p><span style="color:#B22222"><span style="font-size:1.4em"><strong>Machine Intelligence in System Design</strong></span></span></p>
-            </div>
-          </div>
-          <div class="sl-block"
-               data-block-id="7e453a1aa7c9e8d8bb62c84df48b8253"
-               data-block-type="text"
-               style="height: auto; width: 248px; left: 750px; top: 25px;">
-            <div class="sl-block-content"
-                 data-placeholder-tag="p"
-                 data-placeholder-text="Text"
-                 style="z-index: 11;">
-              <p><span style="font-size:0.5em"><span style="color:#B22222"><strong>KC Machine Learning Lab</strong></span></span></p>
-              <p>&nbsp;</p>
-            </div>
-          </div>
-          <div class="sl-block"
-               data-block-id="87b0404addf3fb16a363039fec5a8955"
-               data-block-type="shape"
-               style="width: 201px; height: 12px; left: 760px; top: 64px;">
-            <div class="sl-block-content"
-                 data-shape-fill-color="rgb(166, 28, 0)"
-                 data-shape-stretch="true"
-                 data-shape-type="rect"
-                 style="z-index: 12;">
-              <svg height="100%"
-                   preserveaspectratio="none"
-                   version="1.1"
-                   viewbox="0 0 201 12"
-                   width="100%"
-                   xmlns="http://www.w3.org/2000/svg">
-              <rect class="shape-element"
-                    fill="rgb(166, 28, 0)"
-                    height="12"
-                    rx="0"
-                    ry="0"
-                    width="201"></rect></svg>
-            </div>
-          </div>
-          <div class="sl-block"
-               data-block-id="d4da448b8e81bcacdd9c8a49b1f9157e"
-               data-block-type="text"
-               style="height: auto; width: 846px; left: 57px; top: 179px;">
-            <div class="sl-block-content"
-                 data-has-line-height=""
-                 data-placeholder-tag="p"
-                 data-placeholder-text="Text"
-                 style="z-index: 13; text-align: left; line-height: 1.482;">
-              <p><span><span>We hope to replace the</span> <strong>heuristics</strong> <span>with</span> <strong>machine learning systems</strong><br>
-              <span>that can learn better and faster via past experience, so that every system can</span> <strong>adapt</strong> <span>to the</span> <strong>environment</strong> <span>it is</span> <strong>deployed</strong><span>.</span></span></p>
-              <p><br>
-              &nbsp;</p>
-              <p>&nbsp;</p>
-              <p>&nbsp;</p>
-            </div>
-          </div>
-          <div class="sl-block"
-               data-block-id="93065717bd7d13288ff15138c91dee60"
-               data-block-type="image"
-               style="width: 147px; height: 147px; left: 400px; top: 321px; min-width: 4px; min-height: 4px;">
-            <div class="sl-block-content"
-                 style="z-index: 14;"><img data-lazy-loaded=""
-                 data-natural-height="512"
-                 data-natural-width="512"
-                 data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/1121758/images/6504409/machine-learning.png"
-                 style=""></div>
-          </div>
-          <div class="sl-block"
-               data-block-id="1c17901ff54f39afe9242618de05fc71"
-               data-block-type="text"
-               style="height: auto; width: 846px; left: 57px; top: 447px;">
-            <div class="sl-block-content"
-                 data-has-line-height=""
-                 data-placeholder-tag="p"
-                 data-placeholder-text="Text"
-                 style="z-index: 15; text-align: left; line-height: 1.482;">
-              <p>&nbsp;</p>
-              <p><span><span>It will also free experts from designing heuristics and let them focus on formulating</span> <strong>optimization objectives</strong><span>, which will benefit both the system and the experts in the long
-              run.</span></span></p>
-              <p>&nbsp;</p>
-              <p><br>
-              &nbsp;</p>
-              <p>&nbsp;</p>
-              <p>&nbsp;</p>
-            </div>
-          </div>
-        </section><!--02-3.Graph-based Optimization-->
+        <!--02-3.Graph-based Optimization-->
         <section data-id="1c8515c0aec706340ed8e8fa181bed6e">
           <div class="sl-block"
                data-block-id="361f360a644859fbd355c147c1b2d2b5"
@@ -2551,8 +2060,766 @@
                  data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/1121758/images/6504508/pasted-from-clipboard.png"
                  style=""></div>
           </div>
+        </section>      
+      </section>
+      
+      <!--02-1-3. Geometry-->
+      <section class="stack"
+               data-id="9b5cf61735cc80f1a51df48926053813">
+
+        <section data-markdown>
+          # Geometry
         </section>
-      </section><!--02-4.Open Source Machine Learning Framework-->
+
+        <section data-id="95b0c2cb0fc803d32aa2a1c2b840cdf2">
+          <div class="sl-block"
+               data-block-id="10e8346a7420a43ed807db5f0d648c9f"
+               data-block-type="text"
+               style="height: auto; width: 603px; left: 30px; top: 47px;">
+            <div class="sl-block-content"
+                 data-placeholder-tag="p"
+                 data-placeholder-text="Text"
+                 style="z-index: 10;">
+              <p><span style="color:#B22222"><span style="font-size:1.4em"><strong>Hyperbolic geometry and ML</strong></span></span></p>
+              <p>&nbsp;</p>
+            </div>
+          </div>
+          <div class="sl-block"
+               data-block-id="c7e84c002291a2ec2bb24b16381895f4"
+               data-block-type="text"
+               style="height: auto; width: 248px; left: 750px; top: 25px;">
+            <div class="sl-block-content"
+                 data-placeholder-tag="p"
+                 data-placeholder-text="Text"
+                 style="z-index: 11;">
+              <p><span style="font-size:0.5em"><span style="color:#B22222"><strong>KC Machine Learning Lab</strong></span></span></p>
+              <p>&nbsp;</p>
+            </div>
+          </div>
+          <div class="sl-block"
+               data-block-id="f0b617e6446407524bd302bad6a8f735"
+               data-block-type="shape"
+               style="width: 321px; height: 12px; left: 640px; top: 64px;">
+            <div class="sl-block-content"
+                 data-shape-fill-color="rgb(166, 28, 0)"
+                 data-shape-stretch="true"
+                 data-shape-type="rect"
+                 style="z-index: 12;">
+              <svg height="100%"
+                   preserveaspectratio="none"
+                   version="1.1"
+                   viewbox="0 0 321 12"
+                   width="100%"
+                   xmlns="http://www.w3.org/2000/svg">
+              <rect class="shape-element"
+                    fill="rgb(166, 28, 0)"
+                    height="12"
+                    rx="0"
+                    ry="0"
+                    width="321"></rect></svg>
+            </div>
+          </div>
+          <div class="sl-block"
+               data-block-id="a17b2ea21a3a96d2894da2b31ded14bb"
+               data-block-type="shape"
+               style="width: 68px; height: 12px; left: 0px; top: 20px;">
+            <div class="sl-block-content"
+                 data-shape-fill-color="rgb(166, 28, 0)"
+                 data-shape-stretch="true"
+                 data-shape-type="rect"
+                 style="z-index: 13;">
+              <svg height="100%"
+                   preserveaspectratio="none"
+                   version="1.1"
+                   viewbox="0 0 68 12"
+                   width="100%"
+                   xmlns="http://www.w3.org/2000/svg">
+              <rect class="shape-element"
+                    fill="rgb(166, 28, 0)"
+                    height="12"
+                    rx="0"
+                    ry="0"
+                    width="68"></rect></svg>
+            </div>
+          </div>
+          <div class="sl-block"
+               data-block-id="4f2c149ec1c8f422ddadc885d87f06f4"
+               data-block-type="text"
+               style="height: auto; width: 330px; left: 56px; top: 8px;">
+            <div class="sl-block-content"
+                 data-placeholder-tag="p"
+                 data-placeholder-text="Text"
+                 dir="ui"
+                 style="z-index: 14;">
+              <p><span style="font-size:0.9em;"><span style="color:#B22222"><strong>Representative Learning</strong></span></span></p>
+              <p><br></p>
+            </div>
+          </div>
+          <div class="sl-block"
+               data-block-id="485e066dba695de8fc482072705b050d"
+               data-block-type="image"
+               style="width: 269px; height: 257px; left: 56px; top: 140px; min-width: 4px; min-height: 4px;">
+            <div class="sl-block-content"
+                 style="z-index: 15;"><img data-lazy-loaded=""
+                 data-natural-height="490"
+                 data-natural-width="512"
+                 data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/1121758/images/6504339/pasted-from-clipboard.png"
+                 style=""></div>
+          </div>
+          <div class="sl-block"
+               data-block-id="b0c1a4f636b35a9b92a2591379c7f428"
+               data-block-type="image"
+               style="width: 256px; height: 255px; left: 684px; top: 410px; min-width: 4px; min-height: 4px;">
+            <div class="sl-block-content"
+                 style="z-index: 16;"><img data-lazy-loaded=""
+                 data-natural-height="403"
+                 data-natural-width="404"
+                 data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/1121758/images/6504340/pasted-from-clipboard.png"
+                 style=""></div>
+          </div>
+          <div class="sl-block"
+               data-block-id="dca4e92903380b80dd55d48606ded951"
+               data-block-type="text"
+               style="height: auto; width: 600px; left: 340px; top: 193px;">
+            <div class="sl-block-content"
+                 data-placeholder-tag="p"
+                 data-placeholder-text="Text"
+                 style="z-index: 17; text-align: left;">
+              <p><span><strong>Embedding hierarchical data</strong> <span>such as</span><br>
+              <span>computer networks can be done more efficiently</span><br>
+              <span>in an ambient space of</span> <strong>negative curvature</strong><span>.</span></span></p>
+              <p>&nbsp;</p>
+            </div>
+          </div>
+          <div class="sl-block"
+               data-block-id="d64c9aebbd03613bb9f2aebfccf34951"
+               data-block-type="text"
+               style="height: auto; width: 637px; left: 68px; top: 443px;">
+            <div class="sl-block-content"
+                 data-placeholder-tag="p"
+                 data-placeholder-text="Text"
+                 style="z-index: 18; text-align: left;">
+              <p><span><span>A</span> <strong>hyperbolic geometry</strong> <span>also occurs naturally when</span><br>
+              <span>considering</span> <strong>hierarchical clustering of data</strong><span>,<br>
+              which is</span> <span>one of the popular unsupervised<br>
+              learning algorithms.</span></span></p>
+              <p>&nbsp;</p>
+            </div>
+          </div>
+        </section>
+        <section data-id="9d39e4d322a358d2d19744fe6c428865">
+          <div class="sl-block"
+               data-block-id="80ed557af258f643371c199dc8037940"
+               data-block-type="text"
+               style="height: auto; width: 603px; left: 30px; top: 47px;">
+            <div class="sl-block-content"
+                 data-placeholder-tag="p"
+                 data-placeholder-text="Text"
+                 style="z-index: 10;">
+              <p><span style="color:#B22222"><span style="font-size:1.4em"><strong>Hyperbolic geometry and ML</strong></span></span></p>
+              <p>&nbsp;</p>
+            </div>
+          </div>
+          <div class="sl-block"
+               data-block-id="7ea1b087d333443eb7ba999df28ba6cc"
+               data-block-type="text"
+               style="height: auto; width: 248px; left: 750px; top: 25px;">
+            <div class="sl-block-content"
+                 data-placeholder-tag="p"
+                 data-placeholder-text="Text"
+                 style="z-index: 11;">
+              <p><span style="font-size:0.5em"><span style="color:#B22222"><strong>KC Machine Learning Lab</strong></span></span></p>
+              <p>&nbsp;</p>
+            </div>
+          </div>
+          <div class="sl-block"
+               data-block-id="462dea536887a089475e20e11a5c7cc9"
+               data-block-type="shape"
+               style="width: 321px; height: 12px; left: 640px; top: 64px;">
+            <div class="sl-block-content"
+                 data-shape-fill-color="rgb(166, 28, 0)"
+                 data-shape-stretch="true"
+                 data-shape-type="rect"
+                 style="z-index: 12;">
+              <svg height="100%"
+                   preserveaspectratio="none"
+                   version="1.1"
+                   viewbox="0 0 321 12"
+                   width="100%"
+                   xmlns="http://www.w3.org/2000/svg">
+              <rect class="shape-element"
+                    fill="rgb(166, 28, 0)"
+                    height="12"
+                    rx="0"
+                    ry="0"
+                    width="321"></rect></svg>
+            </div>
+          </div>
+          <div class="sl-block"
+               data-block-id="6cbe09e3244130732c7763387b75b75c"
+               data-block-type="shape"
+               style="width: 68px; height: 12px; left: 0px; top: 20px;">
+            <div class="sl-block-content"
+                 data-shape-fill-color="rgb(166, 28, 0)"
+                 data-shape-stretch="true"
+                 data-shape-type="rect"
+                 style="z-index: 13;">
+              <svg height="100%"
+                   preserveaspectratio="none"
+                   version="1.1"
+                   viewbox="0 0 68 12"
+                   width="100%"
+                   xmlns="http://www.w3.org/2000/svg">
+              <rect class="shape-element"
+                    fill="rgb(166, 28, 0)"
+                    height="12"
+                    rx="0"
+                    ry="0"
+                    width="68"></rect></svg>
+            </div>
+          </div>
+          <div class="sl-block"
+               data-block-id="b79a6433aa66979bbb6a5644284bae23"
+               data-block-type="text"
+               style="height: auto; width: 330px; left: 56px; top: 8px;">
+            <div class="sl-block-content"
+                 data-placeholder-tag="p"
+                 data-placeholder-text="Text"
+                 dir="ui"
+                 style="z-index: 14;">
+              <p><span style="font-size:0.9em;"><span style="color:#B22222"><strong>Representative Learning</strong></span></span></p>
+              <p><br></p>
+            </div>
+          </div>
+          <div class="sl-block"
+               data-block-id="e2cc34ee330c637b4e09c96a8cd5af52"
+               data-block-type="text"
+               style="height: auto; width: 872px; left: 80px; top: 490px;">
+            <div class="sl-block-content"
+                 data-placeholder-tag="p"
+                 data-placeholder-text="Text"
+                 style="z-index: 15; text-align: left;">
+              <p><span style="font-size:0.9em">Utilizing the efficiency of such a <strong>Riemannian geometry</strong> and developing suitable, intrinsic <strong>optimization techniques</strong> for machine learning and<br>
+              deep learning is both a theoretically interesting challenge and a practically applicable method to a wide variety of problems.</span></p>
+            </div>
+          </div>
+          <div class="sl-block"
+               data-block-id="07e3f54f14e333604ee03074062bf06a"
+               data-block-type="image"
+               style="width: 277px; height: 302px; left: 160px; top: 140px; min-width: 4px; min-height: 4px;">
+            <div class="sl-block-content"
+                 style="z-index: 16;"><img data-lazy-loaded=""
+                 data-natural-height="522"
+                 data-natural-width="479"
+                 data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/1121758/images/6504344/pasted-from-clipboard.png"
+                 style=""></div>
+          </div>
+          <div class="sl-block"
+               data-block-id="d5e02c9bd0d19dc4b6e27aa30a2653ec"
+               data-block-type="image"
+               style="width: 301px; height: 302px; left: 499px; top: 140px; min-width: 4px; min-height: 4px;">
+            <div class="sl-block-content"
+                 style="z-index: 17;"><img data-lazy-loaded=""
+                 data-natural-height="540"
+                 data-natural-width="538"
+                 data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/1121758/images/6504346/pasted-from-clipboard.png"
+                 style=""></div>
+          </div>
+        </section>
+      </section>
+
+      <!--02-2. Engineering-->
+      <section data-markdown>
+        # Engineering
+      </section>
+      <!--02-2-1. MLSys/SysML-->
+      <section class="stack"
+               data-id="99b268b529371bfdba826f7e7a5b25db">
+        <section data-markdown>
+          # MLSys/SysML
+        </section>
+        <section data-id="16a21c648ddd953848bd4b125f7559af">
+          <div class="sl-block"
+               data-block-id="e37e80dca00d9c3c5742069756e123a7"
+               data-block-type="text"
+               style="height: auto; width: 838px; left: -38px; top: 40px;">
+            <div class="sl-block-content"
+                 data-placeholder-tag="p"
+                 data-placeholder-text="Text"
+                 style="z-index: 10;">
+              <p><span style="color:#B22222"><span style="font-size:1.4em"><strong>Machine Intelligence in System Design</strong></span></span></p>
+            </div>
+          </div>
+          <div class="sl-block"
+               data-block-id="ec28d19cda777f36b4d89cb765940983"
+               data-block-type="text"
+               style="height: auto; width: 248px; left: 750px; top: 25px;">
+            <div class="sl-block-content"
+                 data-placeholder-tag="p"
+                 data-placeholder-text="Text"
+                 style="z-index: 11;">
+              <p><span style="font-size:0.5em"><span style="color:#B22222"><strong>KC Machine Learning Lab</strong></span></span></p>
+              <p>&nbsp;</p>
+            </div>
+          </div>
+          <div class="sl-block"
+               data-block-id="a274f45f36f6d5c212c6ad38497a05f7"
+               data-block-type="shape"
+               style="width: 201px; height: 12px; left: 760px; top: 64px;">
+            <div class="sl-block-content"
+                 data-shape-fill-color="rgb(166, 28, 0)"
+                 data-shape-stretch="true"
+                 data-shape-type="rect"
+                 style="z-index: 12;">
+              <svg height="100%"
+                   preserveaspectratio="none"
+                   version="1.1"
+                   viewbox="0 0 201 12"
+                   width="100%"
+                   xmlns="http://www.w3.org/2000/svg">
+              <rect class="shape-element"
+                    fill="rgb(166, 28, 0)"
+                    height="12"
+                    rx="0"
+                    ry="0"
+                    width="201"></rect></svg>
+            </div>
+          </div>
+          <div class="sl-block"
+               data-block-id="93171f93196d213dd9e3f8d90652067a"
+               data-block-type="text"
+               style="height: auto; width: 846px; left: 57px; top: 140px;">
+            <div class="sl-block-content"
+                 data-has-line-height=""
+                 data-placeholder-tag="p"
+                 data-placeholder-text="Text"
+                 style="z-index: 13; text-align: left; line-height: 1.378;">
+              <p><span style="font-size:0.9em">When designing a system, it often contains <strong>heuristics</strong> that are the result of trials and errors by many experts, whose time and effort can be better spent upon researching more
+              challenging parts of the system.</span></p>
+              <p>&nbsp;</p>
+              <p><span style="font-size:0.9em">&nbsp; &nbsp; &nbsp; Modern <strong>computer systems</strong> contain various heuristics in both hardware&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; and software in order to increase their computational
+              performance.</span><br>
+              &nbsp;</p>
+              <p><span style="font-size:0.9em"><strong>&nbsp; &nbsp; &nbsp; Electronic circuit design</strong> also involves various decision makings based&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; upon heuristics of engineers.</span><br>
+              &nbsp;</p>
+              <p><span style="font-size:0.9em"><strong>&nbsp; &nbsp; &nbsp;Controller systems</strong> in various manufacturing environments are tuned by&nbsp; &nbsp; &nbsp; &nbsp;experts' heuristics.</span></p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+            </div>
+          </div>
+          <div class="sl-block"
+               data-block-id="95ff6dd5b42c9aab485cb6114f1d1000"
+               data-block-type="shape"
+               style="width: 14px; height: 30px; left: 57px; top: 314px;">
+            <div class="sl-block-content"
+                 data-shape-fill-color="rgb(170, 170, 170)"
+                 data-shape-stretch="true"
+                 data-shape-type="rect"
+                 style="z-index: 14;">
+              <svg height="100%"
+                   preserveaspectratio="none"
+                   version="1.1"
+                   viewbox="0 0 14 30"
+                   width="100%"
+                   xmlns="http://www.w3.org/2000/svg">
+              <rect class="shape-element"
+                    fill="rgb(170, 170, 170)"
+                    height="30"
+                    rx="0"
+                    ry="0"
+                    width="14"></rect></svg>
+            </div>
+          </div>
+          <div class="sl-block"
+               data-block-id="219196bf7c1a216b9f8c34096ef8a05f"
+               data-block-type="shape"
+               style="width: 14px; height: 30px; left: 57px; top: 433px;">
+            <div class="sl-block-content"
+                 data-shape-fill-color="rgb(170, 170, 170)"
+                 data-shape-stretch="true"
+                 data-shape-type="rect"
+                 style="z-index: 15;">
+              <svg height="100%"
+                   preserveaspectratio="none"
+                   version="1.1"
+                   viewbox="0 0 14 30"
+                   width="100%"
+                   xmlns="http://www.w3.org/2000/svg">
+              <rect class="shape-element"
+                    fill="rgb(170, 170, 170)"
+                    height="30"
+                    rx="0"
+                    ry="0"
+                    width="14"></rect></svg>
+            </div>
+          </div>
+          <div class="sl-block"
+               data-block-id="da8b7818c86853843dce4856b7a91d26"
+               data-block-type="shape"
+               style="width: 14px; height: 30px; left: 57px; top: 556px;">
+            <div class="sl-block-content"
+                 data-shape-fill-color="rgb(170, 170, 170)"
+                 data-shape-stretch="true"
+                 data-shape-type="rect"
+                 style="z-index: 16;">
+              <svg height="100%"
+                   preserveaspectratio="none"
+                   version="1.1"
+                   viewbox="0 0 14 30"
+                   width="100%"
+                   xmlns="http://www.w3.org/2000/svg">
+              <rect class="shape-element"
+                    fill="rgb(170, 170, 170)"
+                    height="30"
+                    rx="0"
+                    ry="0"
+                    width="14"></rect></svg>
+            </div>
+          </div>
+        </section>
+        <section data-id="035002a421c8c4e5c8e62e8298e224cf">
+          <div class="sl-block"
+               data-block-id="90d14dc3d6024b1ce85540f200439293"
+               data-block-type="text"
+               style="height: auto; width: 838px; left: -38px; top: 40px;">
+            <div class="sl-block-content"
+                 data-placeholder-tag="p"
+                 data-placeholder-text="Text"
+                 style="z-index: 10;">
+              <p><span style="color:#B22222"><span style="font-size:1.4em"><strong>Machine Intelligence in System Design</strong></span></span></p>
+            </div>
+          </div>
+          <div class="sl-block"
+               data-block-id="7e453a1aa7c9e8d8bb62c84df48b8253"
+               data-block-type="text"
+               style="height: auto; width: 248px; left: 750px; top: 25px;">
+            <div class="sl-block-content"
+                 data-placeholder-tag="p"
+                 data-placeholder-text="Text"
+                 style="z-index: 11;">
+              <p><span style="font-size:0.5em"><span style="color:#B22222"><strong>KC Machine Learning Lab</strong></span></span></p>
+              <p>&nbsp;</p>
+            </div>
+          </div>
+          <div class="sl-block"
+               data-block-id="87b0404addf3fb16a363039fec5a8955"
+               data-block-type="shape"
+               style="width: 201px; height: 12px; left: 760px; top: 64px;">
+            <div class="sl-block-content"
+                 data-shape-fill-color="rgb(166, 28, 0)"
+                 data-shape-stretch="true"
+                 data-shape-type="rect"
+                 style="z-index: 12;">
+              <svg height="100%"
+                   preserveaspectratio="none"
+                   version="1.1"
+                   viewbox="0 0 201 12"
+                   width="100%"
+                   xmlns="http://www.w3.org/2000/svg">
+              <rect class="shape-element"
+                    fill="rgb(166, 28, 0)"
+                    height="12"
+                    rx="0"
+                    ry="0"
+                    width="201"></rect></svg>
+            </div>
+          </div>
+          <div class="sl-block"
+               data-block-id="d4da448b8e81bcacdd9c8a49b1f9157e"
+               data-block-type="text"
+               style="height: auto; width: 846px; left: 57px; top: 179px;">
+            <div class="sl-block-content"
+                 data-has-line-height=""
+                 data-placeholder-tag="p"
+                 data-placeholder-text="Text"
+                 style="z-index: 13; text-align: left; line-height: 1.482;">
+              <p><span><span>We hope to replace the</span> <strong>heuristics</strong> <span>with</span> <strong>machine learning systems</strong><br>
+              <span>that can learn better and faster via past experience, so that every system can</span> <strong>adapt</strong> <span>to the</span> <strong>environment</strong> <span>it is</span> <strong>deployed</strong><span>.</span></span></p>
+              <p><br>
+              &nbsp;</p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+            </div>
+          </div>
+          <div class="sl-block"
+               data-block-id="93065717bd7d13288ff15138c91dee60"
+               data-block-type="image"
+               style="width: 147px; height: 147px; left: 400px; top: 321px; min-width: 4px; min-height: 4px;">
+            <div class="sl-block-content"
+                 style="z-index: 14;"><img data-lazy-loaded=""
+                 data-natural-height="512"
+                 data-natural-width="512"
+                 data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/1121758/images/6504409/machine-learning.png"
+                 style=""></div>
+          </div>
+          <div class="sl-block"
+               data-block-id="1c17901ff54f39afe9242618de05fc71"
+               data-block-type="text"
+               style="height: auto; width: 846px; left: 57px; top: 447px;">
+            <div class="sl-block-content"
+                 data-has-line-height=""
+                 data-placeholder-tag="p"
+                 data-placeholder-text="Text"
+                 style="z-index: 15; text-align: left; line-height: 1.482;">
+              <p>&nbsp;</p>
+              <p><span><span>It will also free experts from designing heuristics and let them focus on formulating</span> <strong>optimization objectives</strong><span>, which will benefit both the system and the experts in the long
+              run.</span></span></p>
+              <p>&nbsp;</p>
+              <p><br>
+              &nbsp;</p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+            </div>
+          </div>
+        </section>
+        <section data-id="ae5f9a39ed313d1c2f57904e40dc5d0c">
+          <div class="sl-block"
+               data-block-id="fba59997fb52ef410817f4761d2be40a"
+               data-block-type="text"
+               style="height: auto; width: 803px; left: 68px; top: 45px;">
+            <div class="sl-block-content"
+                 data-placeholder-tag="p"
+                 data-placeholder-text="Text"
+                 style="z-index: 10;">
+              <p><span style="color:#B22222"><span style="font-size:39.2px"><strong>Heterogeneous hardware platforms and ML</strong></span></span></p>
+            </div>
+          </div>
+          <div class="sl-block"
+               data-block-id="c1aadc0ff9aa0d21633e26dc10895ab0"
+               data-block-type="text"
+               style="height: auto; width: 248px; left: 750px; top: 25px;">
+            <div class="sl-block-content"
+                 data-placeholder-tag="p"
+                 data-placeholder-text="Text"
+                 style="z-index: 11;">
+              <p><span style="font-size:0.5em"><span style="color:#B22222"><strong>KC Machine Learning Lab</strong></span></span></p>
+              <p>&nbsp;</p>
+            </div>
+          </div>
+          <div class="sl-block"
+               data-block-id="82c3ff52ebfcabe34286616a492a1cb0"
+               data-block-type="shape"
+               style="width: 81px; height: 13px; left: 880px; top: 64px;">
+            <div class="sl-block-content"
+                 data-shape-fill-color="rgb(166, 28, 0)"
+                 data-shape-stretch="true"
+                 data-shape-type="rect"
+                 style="z-index: 12;">
+              <svg height="100%"
+                   preserveaspectratio="none"
+                   version="1.1"
+                   viewbox="0 0 81 13"
+                   width="100%"
+                   xmlns="http://www.w3.org/2000/svg">
+              <rect class="shape-element"
+                    fill="rgb(166, 28, 0)"
+                    height="13"
+                    rx="0"
+                    ry="0"
+                    width="81"></rect></svg>
+            </div>
+          </div>
+          <div class="sl-block"
+               data-block-id="c9c196654e628f2adeb1a15126645bd5"
+               data-block-type="shape"
+               style="width: 68px; height: 12px; left: 0px; top: 20px;">
+            <div class="sl-block-content"
+                 data-shape-fill-color="rgb(166, 28, 0)"
+                 data-shape-stretch="true"
+                 data-shape-type="rect"
+                 style="z-index: 13;">
+              <svg height="100%"
+                   preserveaspectratio="none"
+                   version="1.1"
+                   viewbox="0 0 68 12"
+                   width="100%"
+                   xmlns="http://www.w3.org/2000/svg">
+              <rect class="shape-element"
+                    fill="rgb(166, 28, 0)"
+                    height="12"
+                    rx="0"
+                    ry="0"
+                    width="68"></rect></svg>
+            </div>
+          </div>
+          <div class="sl-block"
+               data-block-id="07c0ab474ca908595789e06a5b8b1f2e"
+               data-block-type="text"
+               style="height: auto; width: 453px; left: 0px; top: 8px;">
+            <div class="sl-block-content"
+                 data-placeholder-tag="p"
+                 data-placeholder-text="Text"
+                 dir="ui"
+                 style="z-index: 14;">
+              <p><span style="font-size:0.9em"><span style="color:#B22222"><strong>Open Source Framework</strong></span></span></p>
+            </div>
+          </div>
+          <div class="sl-block"
+               data-block-id="076392af9affda56637634941abe195a"
+               data-block-type="text"
+               style="height: auto; width: 863px; left: 80px; top: 169px;">
+            <div class="sl-block-content"
+                 data-has-line-height=""
+                 data-placeholder-tag="p"
+                 data-placeholder-text="Text"
+                 style="z-index: 15; text-align: left; line-height: 1.261;">
+              <p><span><span>Utilizing GPGPUs</span> <span>has been crucial in the success of deep learning,</span><br>
+              <span>which led to a renaissance of</span> <strong>domain-specific hardwares.</strong><br>
+              <span>However, the challenge of developing software for hardware is ever increasing due to the</span> <strong>lack of support</strong> <span>for such target platforms.</span></span></p>
+            </div>
+          </div>
+          <div class="sl-block"
+               data-block-id="615c15dad0792571f617e441bed0e236"
+               data-block-type="image"
+               style="width: 365px; height: 244px; left: 80px; top: 350px; min-width: 4px; min-height: 4px;">
+            <div class="sl-block-content"
+                 style="z-index: 16;"><img data-lazy-loaded=""
+                 data-natural-height="337"
+                 data-natural-width="504"
+                 data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/1121758/images/6504539/pasted-from-clipboard.png"
+                 style=""></div>
+          </div>
+          <div class="sl-block"
+               data-block-id="5b746f261ef3f48f959f34c52dd67866"
+               data-block-type="image"
+               style="width: 476px; height: 268px; left: 453px; top: 350px; min-width: 4px; min-height: 4px;">
+            <div class="sl-block-content"
+                 style="z-index: 17;"><img data-lazy-loaded=""
+                 data-natural-height="720"
+                 data-natural-width="1280"
+                 data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/1121758/images/6504540/pasted-from-clipboard.png"
+                 style=""></div>
+          </div>
+        </section>
+        <section data-id="22706eb520c47c6e1ecfe5a5e1959426">
+          <div class="sl-block"
+               data-block-id="b8adbb7309f195b576adc223f44c6047"
+               data-block-type="text"
+               style="height: auto; width: 803px; left: 68px; top: 45px;">
+            <div class="sl-block-content"
+                 data-placeholder-tag="p"
+                 data-placeholder-text="Text"
+                 style="z-index: 10;">
+              <p><span style="color:#B22222"><span style="font-size:39.2px"><strong>Heterogeneous hardware platforms and ML</strong></span></span></p>
+            </div>
+          </div>
+          <div class="sl-block"
+               data-block-id="5971c029287c0011343da6354fd869a6"
+               data-block-type="text"
+               style="height: auto; width: 248px; left: 750px; top: 25px;">
+            <div class="sl-block-content"
+                 data-placeholder-tag="p"
+                 data-placeholder-text="Text"
+                 style="z-index: 11;">
+              <p><span style="font-size:0.5em"><span style="color:#B22222"><strong>KC Machine Learning Lab</strong></span></span></p>
+              <p>&nbsp;</p>
+            </div>
+          </div>
+          <div class="sl-block"
+               data-block-id="b6e12e2bd0123f7b1ea9b9b011745d0e"
+               data-block-type="shape"
+               style="width: 81px; height: 13px; left: 880px; top: 64px;">
+            <div class="sl-block-content"
+                 data-shape-fill-color="rgb(166, 28, 0)"
+                 data-shape-stretch="true"
+                 data-shape-type="rect"
+                 style="z-index: 12;">
+              <svg height="100%"
+                   preserveaspectratio="none"
+                   version="1.1"
+                   viewbox="0 0 81 13"
+                   width="100%"
+                   xmlns="http://www.w3.org/2000/svg">
+              <rect class="shape-element"
+                    fill="rgb(166, 28, 0)"
+                    height="13"
+                    rx="0"
+                    ry="0"
+                    width="81"></rect></svg>
+            </div>
+          </div>
+          <div class="sl-block"
+               data-block-id="7e9481761ffb90fb731902979e7f2197"
+               data-block-type="shape"
+               style="width: 68px; height: 12px; left: 0px; top: 20px;">
+            <div class="sl-block-content"
+                 data-shape-fill-color="rgb(166, 28, 0)"
+                 data-shape-stretch="true"
+                 data-shape-type="rect"
+                 style="z-index: 13;">
+              <svg height="100%"
+                   preserveaspectratio="none"
+                   version="1.1"
+                   viewbox="0 0 68 12"
+                   width="100%"
+                   xmlns="http://www.w3.org/2000/svg">
+              <rect class="shape-element"
+                    fill="rgb(166, 28, 0)"
+                    height="12"
+                    rx="0"
+                    ry="0"
+                    width="68"></rect></svg>
+            </div>
+          </div>
+          <div class="sl-block"
+               data-block-id="ac195c27cf6673d411446a07445ba995"
+               data-block-type="text"
+               style="height: auto; width: 453px; left: 0px; top: 8px;">
+            <div class="sl-block-content"
+                 data-placeholder-tag="p"
+                 data-placeholder-text="Text"
+                 dir="ui"
+                 style="z-index: 14;">
+              <p><span style="font-size:0.9em"><span style="color:#B22222"><strong>Open Source Framework</strong></span></span></p>
+            </div>
+          </div>
+          <div class="sl-block"
+               data-block-id="a8467311eb872694570b285532f6cd01"
+               data-block-type="text"
+               style="height: auto; width: 957px; left: 34px; top: 172px;">
+            <div class="sl-block-content"
+                 data-placeholder-tag="p"
+                 data-placeholder-text="Text"
+                 style="z-index: 15; text-align: left;">
+              <p><span style="font-size:0.9em">ML community is keenly aware of such difficulties, and various open source<br>
+              projects are on the way. ML2 hopes to <strong>contribute to such projects</strong>, including</span></p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p><span style="font-size:0.9em"><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; TVM</strong>, which aims to close the gap between the productivity-focused<br>
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; deep learning frameworks, and the performance- or efficiency-oriented&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; hardware backends, and</span><br>
+              &nbsp;</p>
+              <p><span style="font-size:0.9em"><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Rust programming language</strong>, which is suitable for developing native&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;program for various hardware targets thanks to its utilization of LLVM.</span></p>
+              <p>&nbsp;</p>
+            </div>
+          </div>
+          <div class="sl-block"
+               data-block-id="ce5de6eb981f9add3f849d4120bc09e2"
+               data-block-type="image"
+               style="width: 131px; height: 35px; left: 29px; top: 370px; min-width: 4px; min-height: 4px;">
+            <div class="sl-block-content"
+                 style="z-index: 16;"><img data-lazy-loaded=""
+                 data-natural-height="70"
+                 data-natural-width="262"
+                 data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/1121758/images/6504553/pasted-from-clipboard.png"
+                 style=""></div>
+          </div>
+          <div class="sl-block"
+               data-block-id="31f0606e04ae4cbd4bf20d3eae36dcef"
+               data-block-type="image"
+               style="width: 156px; height: 140px; left: 6px; top: 456px; min-width: 4px; min-height: 4px;">
+            <div class="sl-block-content"
+                 style="z-index: 17;"><img data-lazy-loaded=""
+                 data-natural-height="275"
+                 data-natural-width="306"
+                 data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/1121758/images/6504554/pasted-from-clipboard.png"
+                 style=""></div>
+          </div>
+        </section>
+      </section>
+      
+      <!--02-2-2. Open Source Machine Learning Framework-->
       <section class="stack"
                data-id="5e812c405d8d9aaa3bc3394f0ded3290">
         <section data-id="6b40f69db70f820b85bd1dcdf6393d7c">
@@ -3049,252 +3316,10 @@
                  style="left: -17px; top: -42px; width: 336px; height: 224px;"></div>
           </div>
         </section>
-        <section data-id="ae5f9a39ed313d1c2f57904e40dc5d0c">
-          <div class="sl-block"
-               data-block-id="fba59997fb52ef410817f4761d2be40a"
-               data-block-type="text"
-               style="height: auto; width: 803px; left: 68px; top: 45px;">
-            <div class="sl-block-content"
-                 data-placeholder-tag="p"
-                 data-placeholder-text="Text"
-                 style="z-index: 10;">
-              <p><span style="color:#B22222"><span style="font-size:39.2px"><strong>Heterogeneous hardware platforms and ML</strong></span></span></p>
-            </div>
-          </div>
-          <div class="sl-block"
-               data-block-id="c1aadc0ff9aa0d21633e26dc10895ab0"
-               data-block-type="text"
-               style="height: auto; width: 248px; left: 750px; top: 25px;">
-            <div class="sl-block-content"
-                 data-placeholder-tag="p"
-                 data-placeholder-text="Text"
-                 style="z-index: 11;">
-              <p><span style="font-size:0.5em"><span style="color:#B22222"><strong>KC Machine Learning Lab</strong></span></span></p>
-              <p>&nbsp;</p>
-            </div>
-          </div>
-          <div class="sl-block"
-               data-block-id="82c3ff52ebfcabe34286616a492a1cb0"
-               data-block-type="shape"
-               style="width: 81px; height: 13px; left: 880px; top: 64px;">
-            <div class="sl-block-content"
-                 data-shape-fill-color="rgb(166, 28, 0)"
-                 data-shape-stretch="true"
-                 data-shape-type="rect"
-                 style="z-index: 12;">
-              <svg height="100%"
-                   preserveaspectratio="none"
-                   version="1.1"
-                   viewbox="0 0 81 13"
-                   width="100%"
-                   xmlns="http://www.w3.org/2000/svg">
-              <rect class="shape-element"
-                    fill="rgb(166, 28, 0)"
-                    height="13"
-                    rx="0"
-                    ry="0"
-                    width="81"></rect></svg>
-            </div>
-          </div>
-          <div class="sl-block"
-               data-block-id="c9c196654e628f2adeb1a15126645bd5"
-               data-block-type="shape"
-               style="width: 68px; height: 12px; left: 0px; top: 20px;">
-            <div class="sl-block-content"
-                 data-shape-fill-color="rgb(166, 28, 0)"
-                 data-shape-stretch="true"
-                 data-shape-type="rect"
-                 style="z-index: 13;">
-              <svg height="100%"
-                   preserveaspectratio="none"
-                   version="1.1"
-                   viewbox="0 0 68 12"
-                   width="100%"
-                   xmlns="http://www.w3.org/2000/svg">
-              <rect class="shape-element"
-                    fill="rgb(166, 28, 0)"
-                    height="12"
-                    rx="0"
-                    ry="0"
-                    width="68"></rect></svg>
-            </div>
-          </div>
-          <div class="sl-block"
-               data-block-id="07c0ab474ca908595789e06a5b8b1f2e"
-               data-block-type="text"
-               style="height: auto; width: 453px; left: 0px; top: 8px;">
-            <div class="sl-block-content"
-                 data-placeholder-tag="p"
-                 data-placeholder-text="Text"
-                 dir="ui"
-                 style="z-index: 14;">
-              <p><span style="font-size:0.9em"><span style="color:#B22222"><strong>Open Source Framework</strong></span></span></p>
-            </div>
-          </div>
-          <div class="sl-block"
-               data-block-id="076392af9affda56637634941abe195a"
-               data-block-type="text"
-               style="height: auto; width: 863px; left: 80px; top: 169px;">
-            <div class="sl-block-content"
-                 data-has-line-height=""
-                 data-placeholder-tag="p"
-                 data-placeholder-text="Text"
-                 style="z-index: 15; text-align: left; line-height: 1.261;">
-              <p><span><span>Utilizing GPGPUs</span> <span>has been crucial in the success of deep learning,</span><br>
-              <span>which led to a renaissance of</span> <strong>domain-specific hardwares.</strong><br>
-              <span>However, the challenge of developing software for hardware is ever increasing due to the</span> <strong>lack of support</strong> <span>for such target platforms.</span></span></p>
-            </div>
-          </div>
-          <div class="sl-block"
-               data-block-id="615c15dad0792571f617e441bed0e236"
-               data-block-type="image"
-               style="width: 365px; height: 244px; left: 80px; top: 350px; min-width: 4px; min-height: 4px;">
-            <div class="sl-block-content"
-                 style="z-index: 16;"><img data-lazy-loaded=""
-                 data-natural-height="337"
-                 data-natural-width="504"
-                 data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/1121758/images/6504539/pasted-from-clipboard.png"
-                 style=""></div>
-          </div>
-          <div class="sl-block"
-               data-block-id="5b746f261ef3f48f959f34c52dd67866"
-               data-block-type="image"
-               style="width: 476px; height: 268px; left: 453px; top: 350px; min-width: 4px; min-height: 4px;">
-            <div class="sl-block-content"
-                 style="z-index: 17;"><img data-lazy-loaded=""
-                 data-natural-height="720"
-                 data-natural-width="1280"
-                 data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/1121758/images/6504540/pasted-from-clipboard.png"
-                 style=""></div>
-          </div>
-        </section>
-        <section data-id="22706eb520c47c6e1ecfe5a5e1959426">
-          <div class="sl-block"
-               data-block-id="b8adbb7309f195b576adc223f44c6047"
-               data-block-type="text"
-               style="height: auto; width: 803px; left: 68px; top: 45px;">
-            <div class="sl-block-content"
-                 data-placeholder-tag="p"
-                 data-placeholder-text="Text"
-                 style="z-index: 10;">
-              <p><span style="color:#B22222"><span style="font-size:39.2px"><strong>Heterogeneous hardware platforms and ML</strong></span></span></p>
-            </div>
-          </div>
-          <div class="sl-block"
-               data-block-id="5971c029287c0011343da6354fd869a6"
-               data-block-type="text"
-               style="height: auto; width: 248px; left: 750px; top: 25px;">
-            <div class="sl-block-content"
-                 data-placeholder-tag="p"
-                 data-placeholder-text="Text"
-                 style="z-index: 11;">
-              <p><span style="font-size:0.5em"><span style="color:#B22222"><strong>KC Machine Learning Lab</strong></span></span></p>
-              <p>&nbsp;</p>
-            </div>
-          </div>
-          <div class="sl-block"
-               data-block-id="b6e12e2bd0123f7b1ea9b9b011745d0e"
-               data-block-type="shape"
-               style="width: 81px; height: 13px; left: 880px; top: 64px;">
-            <div class="sl-block-content"
-                 data-shape-fill-color="rgb(166, 28, 0)"
-                 data-shape-stretch="true"
-                 data-shape-type="rect"
-                 style="z-index: 12;">
-              <svg height="100%"
-                   preserveaspectratio="none"
-                   version="1.1"
-                   viewbox="0 0 81 13"
-                   width="100%"
-                   xmlns="http://www.w3.org/2000/svg">
-              <rect class="shape-element"
-                    fill="rgb(166, 28, 0)"
-                    height="13"
-                    rx="0"
-                    ry="0"
-                    width="81"></rect></svg>
-            </div>
-          </div>
-          <div class="sl-block"
-               data-block-id="7e9481761ffb90fb731902979e7f2197"
-               data-block-type="shape"
-               style="width: 68px; height: 12px; left: 0px; top: 20px;">
-            <div class="sl-block-content"
-                 data-shape-fill-color="rgb(166, 28, 0)"
-                 data-shape-stretch="true"
-                 data-shape-type="rect"
-                 style="z-index: 13;">
-              <svg height="100%"
-                   preserveaspectratio="none"
-                   version="1.1"
-                   viewbox="0 0 68 12"
-                   width="100%"
-                   xmlns="http://www.w3.org/2000/svg">
-              <rect class="shape-element"
-                    fill="rgb(166, 28, 0)"
-                    height="12"
-                    rx="0"
-                    ry="0"
-                    width="68"></rect></svg>
-            </div>
-          </div>
-          <div class="sl-block"
-               data-block-id="ac195c27cf6673d411446a07445ba995"
-               data-block-type="text"
-               style="height: auto; width: 453px; left: 0px; top: 8px;">
-            <div class="sl-block-content"
-                 data-placeholder-tag="p"
-                 data-placeholder-text="Text"
-                 dir="ui"
-                 style="z-index: 14;">
-              <p><span style="font-size:0.9em"><span style="color:#B22222"><strong>Open Source Framework</strong></span></span></p>
-            </div>
-          </div>
-          <div class="sl-block"
-               data-block-id="a8467311eb872694570b285532f6cd01"
-               data-block-type="text"
-               style="height: auto; width: 957px; left: 34px; top: 172px;">
-            <div class="sl-block-content"
-                 data-placeholder-tag="p"
-                 data-placeholder-text="Text"
-                 style="z-index: 15; text-align: left;">
-              <p><span style="font-size:0.9em">ML community is keenly aware of such difficulties, and various open source<br>
-              projects are on the way. ML2 hopes to <strong>contribute to such projects</strong>, including</span></p>
-              <p>&nbsp;</p>
-              <p>&nbsp;</p>
-              <p><span style="font-size:0.9em"><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; TVM</strong>, which aims to close the gap between the productivity-focused<br>
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; deep learning frameworks, and the performance- or efficiency-oriented&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; hardware backends, and</span><br>
-              &nbsp;</p>
-              <p><span style="font-size:0.9em"><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Rust programming language</strong>, which is suitable for developing native&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;program for various hardware targets thanks to its utilization of LLVM.</span></p>
-              <p>&nbsp;</p>
-            </div>
-          </div>
-          <div class="sl-block"
-               data-block-id="ce5de6eb981f9add3f849d4120bc09e2"
-               data-block-type="image"
-               style="width: 131px; height: 35px; left: 29px; top: 370px; min-width: 4px; min-height: 4px;">
-            <div class="sl-block-content"
-                 style="z-index: 16;"><img data-lazy-loaded=""
-                 data-natural-height="70"
-                 data-natural-width="262"
-                 data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/1121758/images/6504553/pasted-from-clipboard.png"
-                 style=""></div>
-          </div>
-          <div class="sl-block"
-               data-block-id="31f0606e04ae4cbd4bf20d3eae36dcef"
-               data-block-type="image"
-               style="width: 156px; height: 140px; left: 6px; top: 456px; min-width: 4px; min-height: 4px;">
-            <div class="sl-block-content"
-                 style="z-index: 17;"><img data-lazy-loaded=""
-                 data-natural-height="275"
-                 data-natural-width="306"
-                 data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/1121758/images/6504554/pasted-from-clipboard.png"
-                 style=""></div>
-          </div>
-        </section>
-      </section><!--3.Outreach Activities-->
+        
+      </section>
+      
+      <!--3.Outreach Activities-->
       <section class="stack"
                data-id="02fc1df1f3c5c2993a8f8bc4954e4aae">
         <section data-id="d52f671cbcdd4e72af4a2694be8e649c">
